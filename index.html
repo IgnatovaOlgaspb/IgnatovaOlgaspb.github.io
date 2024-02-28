@@ -1,49 +1,61 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <title>My site</title>
+        <title>Homework 1</title>
+        <style>
+            div {
+                background: #26dfd5; /* Цвет фона */ 
+            }
+            .letter {
+                color: red; /* Цвет строки */
+            } 
+            ul {
+                color: #0119ee; /* Цвет текста */
+                background: #57f011; /* Цвет фона */
+            }
+            #one {
+                background-color: #b88beb; /* Селектор ID. Цвет фона */
+            }
+        </style>   
     </head>
         <body>
-            <article></article>
-            <aside></aside>
-            <tel></tel>
-            <contact></contact>
-        
-    <button> hello </button>
-    <h1> Добрый день</h1>
-    <h2> Добрый день2</h2>
-    <h3> Добрый день3</h3>
-    <textarea></textarea>
-    <b>it is a B</b><br>
-    <i>it is I</I></i>
-    <div id="menu"></div> 
-        <ol>
-            <li>Sergey</li>
-            <li>Kate<ol><li>Misha</li></ol></li>
-            <li>KIvan</li>
-        </ol>
+            <div>
 
-    <ul>
-        <li>First <ul>
-            <li>1/1
-                <ul>
-                    <li>1.1.1</li>
-                    <li>1.1.2</li>
-                </ul>
-            </li>
-            <li>1/2</li>
-        </ul>
-        <li>Second</li>
-    </ul>
-    <p> Какой-то текст</p>
-    <Marquee>TEXT</Marquee>
-
-    <author></author>
-    <group>
-        <student></student>
-        <student></student>
-        <student></student>
-        <student></student>
-    </group>
+            <h1> Сказки Пушкина</h1>
+           
+            <ul>
+                <li><a href="https://www.culture.ru">Сказка о рыбаке и рыбке</a> </li>
+                <li>Сказка о мёртвой царевне и о семи богатырях</li>
+                <li><span class="letter">Сказка о золотом петушке</span></li>
+                <li style="color: #e5ff00">Сказка о попе и о работнике его Балде</li>
+                <li id="one">Песнь о вещем Олеге</li>
+            </ul>
+            <img src="/home/user/Изображения/9bcc554258decf677bba8fd35011c9e7.JPG" alt="Рисунок" srcset="">
+            <iframe 
+                src="https://www.youtube.com/watch?v=jha9cag23QM" 
+                width="56" 
+                height="31" 
+                frameborder="0" 
+                allowfullscreen>
+            </iframe>
+            <table border="2">
+                <tr>
+                 <th>Наименование</th>
+                 <th>Сказка о рыбаке и рыбке</th>
+                 <th>Сказка о мёртвой царевне и о семи богатырях</th>
+                 <th>Сказка о золотом петушке</th>
+                 <th>Сказка о попе и о работнике его Балде</th>
+                 <th>Песнь о вещем Олеге</th>
+                </tr>
+                <tr>
+                 <td>Количество страниц</td>
+                 <td>25</td>
+                 <td>120</td>
+                 <td>75</td>
+                 <td>44</td>
+                 <td>68</td>
+                 </tr>
+              </table>
+        </div>  
         </body>
-
-</html>
+    </html>
