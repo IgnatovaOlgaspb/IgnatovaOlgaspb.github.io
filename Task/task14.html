@@ -1,0 +1,48 @@
+<!-- // todo: реализовать overlay на tailwind. В статье демонстрируется подход к реализации спинера.
+// https://www.tailwindcsscomponent.com/full-page-overlay-loading-screen#what-is-tailwind-css
+// Запустить код, заменить спинер на сплошную заливку полупрозрачным фоном. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Website</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css">
+  <style>
+    .loader {
+      border-top-color: #3498db;
+      -webkit-animation: spin 1s ease-in-out infinite;
+      animation: spin 1s ease-in-out infinite;
+    }
+
+    @-webkit-keyframes spin {
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Your website content goes here -->
+  
+  <!-- Full page overlay loading screen -->
+  <div class="fixed w-full h-full flex items-center justify-center bg-black z-50 opacity-80">
+    <div class="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-64 w-64"></div>
+    
+  </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+  
+   
