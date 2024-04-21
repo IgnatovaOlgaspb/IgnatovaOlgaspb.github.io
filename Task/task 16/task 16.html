@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Календарь</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      font-size: 100%;
+      line-height: 1.5;
+      font-family: sans-serif;
+      color: #444;
+    }
+
+    .daysOfWeek {
+      color: rgb(10, 44, 233);
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .monthWithYear {
+      text-align: center;
+    }
+
+    .days {
+      text-align: right;
+      vertical-align: top;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      vertical-align: baseline;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .calendar-wrapper {
+      width: 100%;
+      margin: 0 auto;
+      padding: 4px;
+      border: 1px solid #fbfbfc;
+      border-radius: 5px;
+      background: #fff;
+    }
+
+    table {
+      clear: both;
+      width: 100%;
+      border: 1px solid #181717;
+      border-radius: 3px;
+      border-collapse: collapse;
+      color: #0a0a0a;
+    }
+
+    td {
+      height: 100px;
+      border: 1px solid #181717;
+      width: 14.28571429%;
+    }
+
+    td.not-current {
+      color: rgba(22, 21, 21, 0.3);
+      font-weight: 300;
+      background-color: #e9e8e6;
+    }
+
+    td.today {
+      font-weight: 700;
+      color: #d82f67;
+      font-size: 1.5em;
+    }
+
+    thead td {
+      border: none;
+      color: #28283b;
+      text-transform: uppercase;
+      font-size: 1.5em;
+    }
+
+    #btnPrev {
+      float: left;
+      margin-bottom: 20px;
+    }
+
+    #btnPrev:before {
+      padding-right: 4px;
+    }
+
+    #btnNext {
+      float: right;
+      margin-bottom: 20px;
+      padding-left: 4px;
+    }
+
+    #btnPrev,
+    #btnNext {
+      background-color: #e9e8e6;
+      outline: none;
+      font-size: 1em;
+      color: #4002eb;
+      cursor: pointer;
+      font-family: sans-serif;
+
+    }
+
+    #btnPrev:hover,
+    #btnNext:hover {
+      color: #28283b;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="calendar-wrapper">
+    <button id="btnPrev" type="button">Предыдущий</button>
+    <button id="btnNext" type="button">Следующий</button>
+    <div id="divCal"></div>
+  </div>
+</body>
+<script src="task16.js"></script>
+
+</html>
