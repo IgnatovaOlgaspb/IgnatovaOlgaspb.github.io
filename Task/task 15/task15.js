@@ -13,16 +13,17 @@ daysOfWeek = [
   'ВС'
 ];
 
-let calendar = [[],[],[],[],[],[],[]]
-calendar[0] = daysOfWeek
+let calendar = [[],[],[],[],[],[],[]] // сгенерирован массив
+calendar[0] = daysOfWeek  //в первую строку внесены дни недели
 let year = 2024
 let month = 4
-let monthFirstDayOfWeek = (new Date(year, month, 1).getDay() + 6) % 7
+let monthFirstDayOfWeek = (new Date(year, month, 1).getDay() + 6) % 7  // первый день недели месяца (число)
 
-for (let i = 1; i <= 42; i++) {
-  let shiftedIndex = i - monthFirstDayOfWeek
-  let rowIndex = Math.floor((i - 1) / 7)
-  let colIndex = (i - 1) % 7
-  calendar[rowIndex + 1][colIndex] = new Date(year, month, shiftedIndex)
+for (let i = 1; i <= 42; i++) { //i-счетчик ячеек в календаре, первая ячейка соответствует понедельнику
+  let shiftedIndex = i - monthFirstDayOfWeek //смещённый счетчик на количество дней предыдущего месяца
+  let rowIndex = Math.floor((i - 1) / 7) //индекс строки календаря
+  let colIndex = (i - 1) % 7  //индекс колонки календаря
+  calendar[rowIndex + 1][colIndex] = new Date(year, month, shiftedIndex)//записываем дату в очередную ячейку календаря, используя автоинсправления дат (0 соответствует 30 марта)
 } 
 console.log(calendar)
+
