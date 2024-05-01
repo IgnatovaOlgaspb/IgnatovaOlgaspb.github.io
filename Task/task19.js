@@ -34,6 +34,6 @@ class Car {
    }
 }
 
-   let toyotaCamry = new Car(71, 15)
-   toyotaCamry.go(199)
-   toyotaCamry.getFuelLevel()
+   let mercedesBenz = new Car(71, 15)
+   mercedesBenz.go(199)
+   mercedesBenz.getFuelLevel()
